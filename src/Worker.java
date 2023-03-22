@@ -14,12 +14,13 @@ public class Worker extends Thread {
     public void run() {
         for (int i = 0; i < 50; i++) {
             System.out.println(name.concat(" is currently working on: " + product));
-//            try {
-//                Thread.sleep((long) (Math.random() * time));
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                sleep((long) (Math.random() * time));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
+        System.out.println(name.concat(" finished ").concat(product));
     }
 
 }
