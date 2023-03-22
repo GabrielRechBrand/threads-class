@@ -13,10 +13,21 @@ public class Main {
         window.setVisible(true);
         System.out.println("After opening the window: " + Thread.activeCount());
 
-        Worker gabe = new Worker("gabe", "key", 500);
-        Worker jeff = new Worker("jeff", "wallet", 250);
+//        Worker gabe = new Worker("Gabe", "key", 500);
+//        Worker jeff = new Worker("Jeff", "wallet", 250);
+//        Worker mary = new Worker("Mary", "guitar", 2000);
+//
+//        gabe.start();
+//        jeff.start();
+//        mary.start();
 
-        gabe.start();
-        jeff.start();
+        Worker jame = new Worker("Jame", "shoe", 500);
+        Worker rose = new Worker("Rose", "shoe", 500);
+        Worker mack = new Worker("Mack", "shoe", 500);
+
+        jame.start();
+        rose.start();
+        mack.start();
+
     }
 }
