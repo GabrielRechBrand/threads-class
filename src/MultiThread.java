@@ -18,7 +18,7 @@ public class MultiThread extends JFrame {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showInputDialog(null, "Pressed the button");
+                JOptionPane.showMessageDialog(null, "Pressed the button");
             }
         });
     }

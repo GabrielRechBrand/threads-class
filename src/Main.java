@@ -12,5 +12,11 @@ public class Main {
         MultiThread window = new MultiThread();
         window.setVisible(true);
         System.out.println("After opening the window: " + Thread.activeCount());
+
+        Worker gabe = new Worker("gabe", "key", 500);
+        Worker jeff = new Worker("jeff", "wallet", 250);
+
+        gabe.start();
+        jeff.start();
     }
 }
