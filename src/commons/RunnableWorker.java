@@ -1,10 +1,14 @@
-public class Worker extends Thread {
+package commons;
+
+import static java.lang.Thread.sleep;
+
+public class RunnableWorker implements Runnable {
 
     private String name;
     private String product;
     private Integer time;
 
-    public Worker(String name, String product, Integer time) {
+    public RunnableWorker(String name, String product, Integer time) {
         this.name = name;
         this.product = product;
         this.time = time;
